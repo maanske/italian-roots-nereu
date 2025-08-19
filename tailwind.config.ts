@@ -18,6 +18,10 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				'playfair': ['Playfair Display', 'serif'],
+				'inter': ['Inter', 'sans-serif'],
+			},
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
@@ -52,16 +56,22 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				sidebar: {
-					DEFAULT: 'hsl(var(--sidebar-background))',
-					foreground: 'hsl(var(--sidebar-foreground))',
-					primary: 'hsl(var(--sidebar-primary))',
-					'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
-					accent: 'hsl(var(--sidebar-accent))',
-					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
-					border: 'hsl(var(--sidebar-border))',
-					ring: 'hsl(var(--sidebar-ring))'
-				}
+				// Italian Heritage Colors
+				'italian-green': 'hsl(var(--italian-green))',
+				'italian-red': 'hsl(var(--italian-red))',
+				'italian-cream': 'hsl(var(--italian-cream))',
+				'terracotta': 'hsl(var(--terracotta))',
+				'warm-stone': 'hsl(var(--warm-stone))',
+			},
+			backgroundImage: {
+				'gradient-hero': 'var(--gradient-hero)',
+				'gradient-warm': 'var(--gradient-warm)',
+				'gradient-accent': 'var(--gradient-accent)',
+			},
+			boxShadow: {
+				'soft': 'var(--shadow-soft)',
+				'warm': 'var(--shadow-warm)',
+				'elegant': 'var(--shadow-elegant)',
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
